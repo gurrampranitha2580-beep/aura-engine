@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aura Engine
+
+Aura Engine is an enterprise inventory dashboard built with Next.js, React, TypeScript, and Tailwind CSS.
+
+It demonstrates how a large inventory can be searched, filtered, sorted, and analyzed through a clean, responsive interface.
+
+## Features
+
+- **Inventory management:** Browse 50,000 mock products with pagination of 50 records per page.
+- **Global search:** Search inventory by product name or SKU with a 500 ms debounce.
+- **Advanced filters:** Filter by category, stock level, and price range.
+- **Sortable table:** Sort inventory columns and use sticky table headers.
+- **Command Center:** View inventory KPIs, restock priorities, and valuation by category.
+- **CSV export:** Download inventory records matching the selected filters.
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Recharts
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Install Node.js and npm.
+
+### Installation
+
+Clone the repository and navigate to the project directory:
 
 ```bash
+git clone <your-repository-url>
+cd <your-project-folder>
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Replace the repository URL and folder placeholders with your actual values.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Data and API
 
-## Learn More
+This capstone frontend uses a deterministic mock dataset containing 50,000 inventory products and local Next.js API routes to demonstrate inventory operations.
 
-To learn more about Next.js, take a look at the following resources:
+It does not connect to a production database. The mock API is intended for frontend development and demonstration.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Verification
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Run the production build:
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Scope
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project focuses on the frontend experience, inventory interactions, analytics visualizations, and CSV export. It does not include the separate backend implementation.
